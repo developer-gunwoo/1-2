@@ -11,6 +11,6 @@ const server = http.createServer((req, res) => {
 });
 
 // 서버가 3000 port를 사용해서 실행되어지고 있다는 설정
-server.listen(3000, () => {
+server.listen(3000, '0.0.0.0', () => {
   console.log('Server running at http://localhost:3000/');
 });
