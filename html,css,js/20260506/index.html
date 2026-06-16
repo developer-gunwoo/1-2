@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <style>
+        *{ 
+            font-family: "Black Han Sans","Oswald", sans-serif;
+            font-weight: 200;
+            margin: 0; padding: 0; box-sizing: border-box; 
+        }
+        body{ line-height: 1.6; }
+        header{
+            background-color: rgb(245, 245, 245);
+            width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            /* padding: 50px;  모든방향으로 상하좌우 50px */
+        }
+        nav{
+            display: flex;  /* 안에 있는 요소들이 가로로 나오기 시작한다 */
+            /* left right center space-between */
+            justify-content: space-between;
+        }
+        nav ul{
+            display: flex;
+        }
+        nav ul li{
+            list-style: none;   /* 동그라미 없애기 */
+            /* padding: 15px 25px; */
+        }
+        nav ul li a{
+            line-height: 45px;
+            padding: 15px 25px; /* 글자 근처 눌러도 링크 클릭이 되도록 */
+            text-decoration: none;
+            margin-left: 30px;
+            color:black;   /*rgb(10,10,10)*/
+            font-size: 25px;  /* 기본 16px */
+        }
+        nav ul li a:hover{
+            color: rgb(100,100,100);
+            text-shadow: 5px 5px 5px rgb(100,100,100);
+        }
+        .hi{
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            /* display: flex;
+            justify-content: center; */
+        }
+        .slider-item{
+            height: 450px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <h1>로고</h1>
+            </div>
+            <div>
+                <ul><!-- (=unorderlist (순서가 없는태그)) -->
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="slider">
+        <div class="slide-item item1"><h1>First slide</h1></div>
+        <div class="slide-item item2"><h1>Second Slide</h1></div>
+        <div class="slide-item item3"><h1>Third Slide</h1></div>
+    </div>
+    <section class="hi">
+        <h1>안녕</h1>
+        <p>간단한 메인 화면 구성 예시입니다. HTML과 CSS, 그리고 jQuery 플러그인을 활용했습니다.</p>
+    </section>
+    <footer style="text-align: center; background-color: rgb(245,245,245);">
+        <h2>만든사람:오건우</h2>
+        <h2>copy right all reserved</h2>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- ol : 순서가 있는태그 -->
